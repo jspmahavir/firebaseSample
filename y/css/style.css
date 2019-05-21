@@ -1,0 +1,258 @@
+/* RESET CSS :: START */
+
+body {
+    overflow-x: hidden;
+}
+
+*,
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+*:focus {
+    outline: 0 none !important;
+}
+
+.clearfix:after,
+.clearfix:before {
+    content: '';
+    display: table
+}
+
+.clearfix:after {
+    clear: both;
+    display: block
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover,
+a:active,
+a:active,
+a:visited,
+a:focus {
+    color: rgb(254, 254, 254);
+    text-decoration: none;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+hr {
+    border-top: 2px solid #EEEEEE;
+}
+
+::-webkit-input-placeholder {
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+:-ms-input-placeholder {
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+::placeholder {
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track-piece {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: #cccccc;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #cccccc;
+}
+
+/* MAIN CSS :: START */
+
+.header img {
+    max-width: 120px;
+}
+
+.banner {
+    background-image: url(../images/banner-home-depot.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 18% 0;
+    margin-bottom: 45px;
+}
+
+.register_form {
+    padding: 10px 0 30px;
+}
+
+.register_form p.title {
+    font-size: 27px;
+}
+
+.register_form form {
+    padding: 36px 0;
+}
+
+p.result {
+    font-size: 46px;
+}
+
+.lead {
+    font-size:20px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input,
+input:hover,
+input:active,
+input:active,
+input:visited,
+input:focus,
+select,
+select:hover,
+select:active,
+select:active,
+select:visited,
+select:focus {
+    text-decoration: none;
+    outline: none !important;
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+}
+
+.register_form .form-group .form-control {
+    color: #55555a;
+}
+
+.register_form .form-group label {
+    font-weight: normal;
+}
+
+.form-group input#check {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.form-group label.checkbox {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    letter-spacing: 0.06em;
+}
+
+.form-group .checkbox:before {
+    content: '';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid #000;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 8px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.form-group #check:checked + .checkbox:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 7px;
+    width: 6px;
+    height: 12px;
+    border: solid #000000;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.register_form .sign-up,
+.register_form .sign-up:hover,
+.register_form .sign-up:focus,
+.register_form .sign-up:visited,
+.register_form .sign-up:active,
+.register_form .sign-up:active:hover,
+.register_form .sign-up:active:focus {
+    background-color: #f96302;
+    padding: 12px 20px;
+    color: #fff;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    background-image: none;
+    text-shadow: none;
+    border-radius: 0;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .register_form .form-group label {
+        padding: 7px 0;
+    }
+    p.result {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header img {
+        max-width: 80px;
+    }
+
+    .banner {
+        margin-bottom: 20px;
+    }
+
+    hr {
+        margin-bottom: 0;
+    }
+
+    .register_form p.title {
+        font-size: 22px;
+    }
+
+    .register_form form {
+        padding: 20px 0;
+    }
+
+    p.result {
+        font-size: 22px;
+    }
+
+    .lead {
+        font-size:16px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,28 @@
+{
+  "database": {
+    "rules": "database.rule.json"
+  },
+  // "firestore": {
+  //   "rules": "firestore.rules",
+  //   "indexes": "firestore.indexes.json"
+  // },
+  "functions": {
+  },
+  "hosting": {
+    "public": "y",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "storage": {
+    "rules": "storage.rules"
+  }
+}
